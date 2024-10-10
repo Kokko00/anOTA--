@@ -1,55 +1,55 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "DigiOTA"      # Project title
+  author:       "UABC"      # Your name
+  discord:      "UABC"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Digital OTA"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_digiOTA"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "project.v"
+    - "DigiOTA.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "Vip"
+  ui[1]: "Vin"
+  ui[2]: "UI2"
+  ui[3]: "UI3"
+  ui[4]: "UI4"
+  ui[5]: "UI5"
+  ui[6]: "UI6"
+  ui[7]: "UI7"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "Out"
+  uo[1]: "UO1"
+  uo[2]: "UO2"
+  uo[3]: "UO3"
+  uo[4]: "UO4"
+  uo[5]: "UO5"
+  uo[6]: "UO6"
+  uo[7]: "UO7"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "UIO0"
+  uio[1]: "UIO1"
+  uio[2]: "UIO2"
+  uio[3]: "UIO3"
+  uio[4]: "UIO4"
+  uio[5]: "UIO5"
+  uio[6]: "UIO6"
+  uio[7]: "UIO7"
 
 # Do not change!
 yaml_version: 6
