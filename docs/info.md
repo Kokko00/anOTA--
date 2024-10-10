@@ -13,7 +13,7 @@ The circuit works by converting the input signal to a common mode compensation s
 
 ## How to test
 
-T test the circuit, you would need to:
+To test the circuit, you would need to:
 Apply a DC input signal to the circuit and measure the DC output voltage.
 Apply an AC input signal to the circuit and measure the AC output voltage.
 Measure the DC gain and the bandwidth of the circuit.
