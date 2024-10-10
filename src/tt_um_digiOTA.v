@@ -17,30 +17,22 @@ module tt_um_digiOTA (
 );
     
     wire Vip, Vin, Out;
-
     assign Vip = ui_in[0];
     assign Vin = ui_in[1];
-    
     assign uo_out[0]  = Out;  
     assign uo_out[7:1] = 7'b0000000; 
-
     wire INn, INp, INn_CMP, INp_CMP, CMP, EN, not_EN, Op, On, INn_AND, INp_AND; //internals nets 
     not IV1(INn, Vip);    
     not INV2(INn_CMP,CMP);
     not IV3(INp, Vin);
     not INV4(INp_CMP,CMP);
-
     and AND1(INn_AND, INn, INn_CMP);
     and AND2(INp_AND, INp, INp_CMP);
-    
     not IV5(Op, INn_AND);
     not IV6(On, INp_AND);
-    
     xor XOR1(EN, Op, On);
-    
     not IV7(not_EN, EN);
     notif1 IT1(CMP, not_EN, Op);  
-    
     bufif1 BT1(Out, EN, Op);   
     //not IV1(Vip, INn);
     //not IV2(CMP, INn);
