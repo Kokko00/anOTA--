@@ -3,7 +3,7 @@ project:
   title:        "DigiOTA"      # Project title
   author:       "UABC"      # Your name
   discord:      "UABC"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Digital OTA"      # One line description of what your project does
+  description:  "Amplifier with two inputs and one output"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
