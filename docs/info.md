@@ -9,16 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-The circuit works by converting the input signal to a common mode compensation signal (VCMP) which is then added to the external inputs through a summing network. The summing network consists of a series of inverters which sum the VCMP signal with the input signal.
+The circuit works by a voltage entered through the input, and an amplified voltage is obtained at the output.
 
 ## How to test
 
-To test the circuit, you would need to:
-Apply a DC input signal to the circuit and measure the DC output voltage.
-Apply an AC input signal to the circuit and measure the AC output voltage.
-Measure the DC gain and the bandwidth of the circuit.
-Measure the slew rate of the circuit.
-Measure the input-referred noise of the circuit.
+Entering voltage through the input
 
 ## External hardware
 
